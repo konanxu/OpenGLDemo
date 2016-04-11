@@ -9,3 +9,4 @@ OpenGL初体验
 
 
 Apple Sample : https://developer.apple.com/library/ios/samplecode/RosyWriter/Introduction/Intro.html
+RayWenderlich:https://www.raywenderlich.com/70208/opengl-es-pixel-shaders-tutorial
