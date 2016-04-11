@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "DemoViewController.h"
+#import "Demo2ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+#if 1
+    DemoViewController *vc  = [[DemoViewController alloc] init];
+#else
+    Demo2ViewController *vc  = [[Demo2ViewController alloc] init];
+#endif
+
+    self.window.rootViewController = vc;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
